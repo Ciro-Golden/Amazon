@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RubyRailsLabOne</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <head>
+    <nav>
+      <%= link_to("Home", root_path) %>
+      |
+      <%= link_to("About Us", about_us_path) %>
+    </nav>
+  </head>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<h1>About this page</h1>
+
+<%= form_tag(process_about_us_path) do %>
+
+    <div>
+        <%= label_tag(:name) %> <br>
+        <%= text_field_tag(:name) %>
+    </div>
+
+    <div>
+    <%= label_tag(:email) %> <br>
+    <%= email_field_tag(:email) %>
+    </div>
+
+    <div>
+        <%= label_tag(:message) %> <br>
+        <%= text_area_tag(:message, nil, cols: 60, rows: 5)%>
+    </div>
+
+    <%= submit_tag("About Us") %>
+
+    <% end %>
